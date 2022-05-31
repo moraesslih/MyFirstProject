@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!--No Estilo_CSS5, o (.) em body, informa que a imagem está na mesma pasta. Se fosse em outra pasta seria (..)
+Observe que em body no Estilo_CSS5 pode ser feito o background de 2 formas.
+Para deixar o fundo gradiente, vá em Estilo_CSS5.css e em body coloque background: linear-gradient(90deg, #f7ff00, #db36a4 ); 
+Sobre o: #about p{ max-width: 600px; margin: 0 auto;} está relacionado a responsividade
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro projeto</title>
+    <link rel="Stylesheet" href="Estilo_CSS5.css">
+    <script src="https://kit.fontawesome.com/0e0e47a738.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Titillium+Web:wght@200;600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div>
+            <img src="https://png.pngtree.com/templates/md/20180618/md_5b27575e2ee88.jpg" width="50px" alt="Logo Ligia Trindade" >
+        </div>
+        <ul>
+            <li> <a target="_blank" href="https://www.linkedin.com/in/l%C3%ADgia-t-5abb65112/"> Linkedin</a> </li>
+            <li> <a target="_blank" href="mailto:ligia.trindade@live.com"> E-mail</a> </li>
+            <li> <a target="_blank" href="https://wa.me/11997458657"> Whatsapp </a> </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Lígia Trindade</h1>
+                <h5>Desenvolvedora Front End </h5>
+            </div>
+
+            <div onclick="displayabout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <h5> Olá. Seja bem vindo(a).</h5>
+                <p> Este é o meu primeiro projeto.
+                    Estou em desenvolvimento no ramo
+                    da tecnologia, atualmente
+                    aprimorando os meus
+                    conhecimentos através do curso da
+                    Hiring Coders, além de cursos online na plataforma da B7Web.
+                    Busco uma oportunidade onde eu
+                    possa contribuir com os meus
+                    conhecimentos e que me
+                    proporcione uma grande
+                    experiência e crescimento
+                    profissional</p>
+            </div>
+
+            <div class="form">
+                <p> Entre em contato</p>
+                <form action="">
+                    <input type="text" placeholder="Deixe seu e-mail : :) ">
+                    <button>Enviar!</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayabout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

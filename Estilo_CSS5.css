@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(78, 10, 10);
+    font-family: 'titillium web' , 'PT Serif';
+}
+
+ul{
+    list-style: none;
+    font-size: 30px;
+    
+
+}
+
+a{
+    text-decoration: none ;
+    font-weight: 400;
+}
+
+body{
+ 
+ /* background: url(./pexels-photo-1037998.jpeg) no-repeat center center fixed ;
+    background-size: cover; */
+
+ /*   background: linear-gradient(90deg, #f7ff00, #db36a4 ); */
+
+ background-image: url(./pexels-photo-127582.jpeg);
+ background-repeat: no-repeat;
+ background-position: center center fixed;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    /*border-bottom: 1px solid rgb(110, 36, 36); */
+    box-shadow: 1px 1px 10px 1px rgb(110, 36, 36);
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    padding: 5px;
+    border-bottom: 1px dashed rgb(110, 36, 36) ;
+}
+
+header ul li a:hover{
+    color: brown;
+    text-decoration: underline;
+}
+
+header ul li a{
+    transition: 30ms;
+}
+
+.container{
+    text-align: center;
+}
+
+.container .name h1{
+    font-size: 30px;
+}
+
+.container .name h5{
+    font-size: 20px;
+}
+
+#arrow{
+   font-size: 35px; 
+   cursos:pointer;
+   animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes  blink{
+    to{
+        visibility: hidden;
+    }
+
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+} 
+
+.form input{
+    width: 50%;
+    padding: 4px 10px;
+}
+
+.form button {
+    color: blueviolet;
+    width: 15%;
+    padding: 5px 10px ;
+    background: linear-gradient(to right, #c09717 50%, #9c551b 50%));
+    background-size: 200% 100%;
+    background-position: right bottom;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+}
+
+.form button:hover{
+    background-position: left bottom;
+    color: brown;
+}
+
